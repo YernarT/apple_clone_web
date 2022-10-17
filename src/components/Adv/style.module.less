@@ -1,0 +1,32 @@
+.adv {
+	width: 100%;
+	height: 40px;
+	background-color: #444;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	:global(.content) {
+		font-size: 13px;
+		color: #fff;
+		letter-spacing: -0.022em;
+
+		text-decoration: none;
+		text-overflow: ellipsis;
+		text-align: center;
+
+		max-width: 976px;
+		overflow: hidden;
+	}
+
+	@media screen and (max-width: 605px) {
+		height: 50px;
+
+		:global(.content) {
+			font-size: 12px;
+            line-height: 1.4;
+            padding: 0 14px;
+		}
+	}
+}
