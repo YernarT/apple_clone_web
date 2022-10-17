@@ -2,7 +2,7 @@
 import { useRef, useEffect } from 'react';
 
 // 组件
-import { Adv, Navbar } from '@/components';
+import { Adv, Navbar, Header } from '@/components';
 // 全局样式
 import '@/assets/style/reset.css';
 
@@ -11,6 +11,7 @@ function App() {
 		<>
 			<Adv />
 			<Navbar />
+			<Header />
 
 			{/* <AppStyled> */}
 			{/* <Canvas ref={canvasRef} /> */}
