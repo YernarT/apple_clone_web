@@ -1,0 +1,31 @@
+* {
+	padding: 0;
+	margin: 0;
+
+	box-sizing: border-box;
+}
+
+body {
+	position: relative;
+	color: #1d1d1f;
+	background-color: #fff;
+
+	font-size: 17px;
+	line-height: 1.4705882353;
+	font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+	font-weight: 400;
+	font-style: normal;
+	letter-spacing: -0.022em;
+}
+
+h1,
+h2,
+h3,
+h4 {
+	font: inherit;
+}
+
+p,
+span {
+	font: inherit;
+}
