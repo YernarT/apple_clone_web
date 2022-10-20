@@ -1,0 +1,56 @@
+.intro {
+	video {
+		display: block;
+		width: 100%;
+		height: 100vh;
+
+		object-fit: cover;
+	}
+
+	:global(.content) {
+		width: 980px;
+		margin-left: auto;
+		margin-right: auto;
+
+		display: flex;
+		flex-direction: column;
+
+		:global(.title),
+		:global(.text),
+		:global(.link) {
+			text-align: center;
+		}
+
+		:global(.title) {
+			font-size: 90px;
+			line-height: 1.0416666667;
+			font-weight: 600;
+			letter-spacing: -0.015em;
+
+			margin-bottom: 28px;
+		}
+
+		:global(.text) {
+			max-width: 83.333%;
+			margin: auto;
+			margin-bottom: 58px;
+
+			font-size: 28px;
+			line-height: 1.125;
+			font-weight: 600;
+			letter-spacing: 0.004em;
+		}
+
+		:global(.link) {
+			color: #06c;
+			font-size: 20px;
+			line-height: 1.381002381;
+			font-weight: 600;
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}
