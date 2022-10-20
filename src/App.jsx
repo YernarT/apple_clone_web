@@ -1,7 +1,7 @@
 import { useMount, useEventListener, useMemoizedFn } from 'ahooks';
 
 // 组件
-import { Adv, Navbar, Header } from '@/components';
+import { Adv, Navbar, Header, Intro } from '@/components';
 // 全局样式
 import '@/assets/style/reset.css';
 
@@ -40,10 +40,7 @@ function App() {
 			<Adv />
 			<Navbar />
 			<Header />
-
-			{/* <AppStyled> */}
-			{/* <Canvas ref={canvasRef} /> */}
-			{/* </AppStyled> */}
+			<Intro />
 		</>
 	);
 }
