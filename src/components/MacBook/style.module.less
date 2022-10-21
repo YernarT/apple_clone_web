@@ -1,14 +1,85 @@
 .macBook {
 	width: 100%;
-	height: 430vh;
+	height: 520vh;
 	padding: 0 var(--container-padding);
+	position: relative;
 
-	:global(.macbook) {
-		width: 100%;
-		height: 786px;
+	canvas {
+		// width: 100%;
+		// height: 786px;
 
 		position: sticky;
 		left: 0;
-        top: 100px;
+		top: 100px;
+	}
+
+	:global(.data) {
+		position: absolute;
+		display: flex;
+		flex-direction: column;
+
+		color: #86868b;
+
+		opacity: 0;
+		pointer-events: none;
+		transition: opacity 350ms ease;
+
+		:global(.border) {
+			width: 40px;
+			height: 4px;
+			margin-bottom: 14px;
+			background-color: #1d1d1f;
+		}
+
+		:global(.up-to),
+		:global(.desc) {
+			font-size: 17px;
+			line-height: 1.2353641176;
+			font-weight: 500;
+			letter-spacing: -0.022em;
+		}
+
+		:global(.val-wrap) {
+			display: flex;
+			align-items: flex-end;
+			gap: 14px;
+
+			:global(.val) {
+				color: #1d1d1f;
+				font-size: 100px;
+				line-height: 1.04;
+				font-weight: 600;
+				letter-spacing: -0.015em;
+			}
+
+			:global(.desc) {
+				margin-bottom: 12px;
+			}
+		}
+	}
+
+	:global(.show-text) {
+		opacity: 1;
+		pointer-events: auto;
+	}
+
+	:global(.data-1) {
+		top: 90%;
+		left: 90px;
+	}
+
+	:global(.data-2) {
+		top: 86%;
+		left: 63%;
+	}
+
+	:global(.data-3) {
+		top: 97%;
+		left: 25%;
+	}
+
+	:global(.data-4) {
+		top: 96%;
+		left: 57%;
 	}
 }
